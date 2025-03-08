@@ -42,7 +42,7 @@ contract AbyssEth2Depositor is ReentrancyGuard, Pausable, Ownable {
      */
     constructor(bool mainnet, address depositContract_) {
         if (mainnet == true) {
-            depositContract = IDepositContract(0x00000000219ab540356cBB839Cbe05303d7705Fa);
+            depositContract = IDepositContract(0xeD9aE17bDAB18bd71B1cf0283933A1F43507c09E);
         } else if (depositContract_ == 0x0000000000000000000000000000000000000000) {
             depositContract = IDepositContract(0x8c5fecdC472E27Bc447696F431E425D02dd46a8c);
         } else {
